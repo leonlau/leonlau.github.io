@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="竹杖芒鞋轻胜马,一蓑烟雨任平生">
+<meta name="keywords" content="k8s docker golang">
+<meta property="og:type" content="website">
+<meta property="og:title" content="一蓑烟雨">
+<meta property="og:url" content="http://www.criss.com.cn/index.html">
+<meta property="og:site_name" content="一蓑烟雨">
+<meta property="og:description" content="竹杖芒鞋轻胜马,一蓑烟雨任平生">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="一蓑烟雨">
+<meta name="twitter:description" content="竹杖芒鞋轻胜马,一蓑烟雨任平生">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.criss.com.cn/">
+
+
+
+
+
+  <title>一蓑烟雨</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?8c93040ecb420fa4cc4c1f8750da8228";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">一蓑烟雨</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.criss.com.cn/2019/07/10/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Leon Lau">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="一蓑烟雨">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/10/hello-world/" itemprop="url">Hello World</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-10T07:05:00+00:00">
+                2019-07-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.criss.com.cn/2016/12/29/peewee-quickstart/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Leon Lau">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="一蓑烟雨">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/12/29/peewee-quickstart/" itemprop="url">peewee-quickstart</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-29T11:43:12+00:00">
+                2016-12-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>本文译自：<a href="http://docs.peewee-orm.com/en/latest/peewee/quickstart.html" target="_blank" rel="noopener">http://docs.peewee-orm.com/en/latest/peewee/quickstart.html</a></p>
+<p>以下为译文：</p>
+<p><strong>note</strong>: 如果你需要一个更详实的例子的话，可以参考使用 peewee 和 Flask 框架的一个教程： <a href="http://docs.peewee-orm.com/en/latest/peewee/example.html#example-app" target="_blank" rel="noopener">创建一个 twitter 风格的 web app</a></p>
+<h2 id="定义-Model"><a href="#定义-Model" class="headerlink" title="定义 Model"></a>定义 Model</h2><p>Model 类，Field 以及 model 实例与数据库的对应关系如下：</p>
+<table>
+<thead>
+<tr>
+<th>Thing</th>
+<th>Corresponds to…</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Model 类</td>
+<td>数据库表</td>
+</tr>
+<tr>
+<td>Field 实例</td>
+<td>数据库表字段</td>
+</tr>
+<tr>
+<td>Model 实例</td>
+<td>数据库表一行数据</td>
+</tr>
+</tbody></table>
+<p>一般在项目中使用 peewee 的时候都会需要定义一个或多个 <a href="http://docs.peewee-orm.com/en/latest/peewee/api.html#Model" target="_blank" rel="noopener">Model</a> 类：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">from peewee import *</span><br><span class="line"></span><br><span class="line">db = SqliteDatabase(&apos;people.db&apos;)</span><br><span class="line"></span><br><span class="line">class Person(Model):</span><br><span class="line">    name = CharField()</span><br><span class="line">    birthday = DateField()</span><br><span class="line">    is_relative = BooleanField()</span><br><span class="line"></span><br><span class="line">    class Meta:</span><br><span class="line">        database = db  # 此 model 使用 &quot;people.db&quot; 数据库。</span><br></pre></td></tr></table></figure>
+
+<p><strong>note</strong>: 你可能注意到了我们使用 <tt class="docutils literal">Person</tt> 而不是 <tt class="docutils literal">People</tt> 命名我们的 model。 这里有一个你应该遵守的约定——尽管这个表将会包含多个 people，但是我们总是使用 <strong>单数名词</strong> 来命名类名。</p>
+<p>这里有一些用来指定数据存储类型的 <a href="http://docs.peewee-orm.com/en/latest/peewee/models.html#fields" target="_blank" rel="noopener">field types</a> . Peewee 会知道将 pythonic 结果转换为数据库识别的数据，所以你可以放心的在你的代码中使用 Python 类型。</p>
+<p>在 peewee 中定义 <a href="http://en.wikipedia.org/wiki/Foreign_key" target="_blank" rel="noopener">外键关系</a> 也是非常的容易的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">class Pet(Model):</span><br><span class="line">    owner = ForeignKeyField(Person, related_name=&apos;pets&apos;)</span><br><span class="line">    name = CharField()</span><br><span class="line">    animal_type = CharField()</span><br><span class="line"></span><br><span class="line">    class Meta:</span><br><span class="line">        database = db  # 此 model 使用 &quot;people.db&quot; 数据库。</span><br></pre></td></tr></table></figure>
+
+<p>现在我们已经定义了一下 model 了，下面可以连接数据库了。 虽然没必要显示的打开连接，但是这是一个好的习惯，因为它能立即暴露数据库库连接相关的各种错误，而不是在其他某个时候执行第一次查询操作的时候才被发现。 同样的在你处理完以后显示的关闭连接也是一个好的习惯——比如，一个 web app 可能会在接收到一个请求时打开连接，然后再它发送响应的时候关闭连接。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; db.connect()</span><br></pre></td></tr></table></figure>
+
+<p>下面我们将创建用于存储数据的表结构。下面的操作将创建相关的列，索引，sequences 以及外键约束：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; db.create_tables([Person, Pet])</span><br></pre></td></tr></table></figure>
+
+<h2 id="存储数据"><a href="#存储数据" class="headerlink" title="存储数据"></a>存储数据</h2><p>让我们在数据库里存一些 people 数据。可以使用 <a href="http://docs.peewee-orm.com/en/latest/peewee/api.html#Model.save" target="_blank" rel="noopener">save</a> 和 <a href="http://docs.peewee-orm.com/en/latest/peewee/api.html#Model.create" target="_blank" rel="noopener">create</a> 方法来添加和更新 people 记录：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; from datetime import date</span><br><span class="line">&gt;&gt;&gt; uncle_bob = Person(name=&apos;Bob&apos;, birthday=date(1960, 1, 15), is_relative=True)</span><br><span class="line">&gt;&gt;&gt; uncle_bob.save()  # bob 现在已经存到数据库里了</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<p><strong>note</strong>: 当你调用 <a href="http://docs.peewee-orm.com/en/latest/peewee/api.html#Model.save" target="_blank" rel="noopener">save</a> 方法时，将返回生效的记录行数。</p>
+<p>你也可以通过调用 <a href="http://docs.peewee-orm.com/en/latest/peewee/api.html#Model.create" target="_blank" rel="noopener">create</a> 方法来添加一个 person, 它将返回一个 model 实例。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; grandma = Person.create(name=&apos;Grandma&apos;, birthday=date(1935, 3, 1), is_relative=True)</span><br><span class="line">&gt;&gt;&gt; herb = Person.create(name=&apos;Herb&apos;, birthday=date(1950, 5, 5), is_relative=False)</span><br></pre></td></tr></table></figure>
+
+<p>为了更新一行数据，只需修改 model 实例然后调用 <a href="http://docs.peewee-orm.com/en/latest/peewee/api.html#Model.save" target="_blank" rel="noopener">save</a> 方法保存变更就可以了。下面我们将更改 Grandma 的名字然后把变更保存到数据中：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; grandma.name = &apos;Grandma L.&apos;</span><br><span class="line">&gt;&gt;&gt; grandma.save()  # 更新数据库中 grandma 的名字</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<p>我们现在在数据库里已经有 3 个人了。让我们给他们一些 pet. grandma 不喜欢在房间里有动物，因此她一点也不想要， 但是 Herb 非常喜欢动物：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; bob_kitty = Pet.create(owner=uncle_bob, name=&apos;Kitty&apos;, animal_type=&apos;cat&apos;)</span><br><span class="line">&gt;&gt;&gt; herb_fido = Pet.create(owner=herb, name=&apos;Fido&apos;, animal_type=&apos;dog&apos;)</span><br><span class="line">&gt;&gt;&gt; herb_mittens = Pet.create(owner=herb, name=&apos;Mittens&apos;, animal_type=&apos;cat&apos;)</span><br><span class="line">&gt;&gt;&gt; herb_mittens_jr = Pet.create(owner=herb, name=&apos;Mittens Jr&apos;, animal_type=&apos;cat&apos;)</span><br></pre></td></tr></table></figure>
+
+<p>过了很长一段时间后， Mittens 生病去世了。 我们需要把他从数据库中移除掉：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; herb_mittens.delete_instance()  # 他有个非常棒的人生</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<p><strong>note</strong>: <a href="http://docs.peewee-orm.com/en/latest/peewee/api.html#Model.delete_instance" target="_blank" rel="noopener">delete_instance()</a> 的返回值是被从数据库中移除的数据的总行数。</p>
+<p>Uncle Bob 觉得太多的动物会弄脏 Herb 的屋子，因此他收养了 Fido：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; herb_fido.owner = uncle_bob</span><br><span class="line">&gt;&gt;&gt; herb_fido.save()</span><br><span class="line">&gt;&gt;&gt; bob_fido = herb_fido  # 为了更明确，我们重命名了变量</span><br></pre></td></tr></table></figure>
+
+<h2 id="检索数据"><a href="#检索数据" class="headerlink" title="检索数据"></a>检索数据</h2><p>下面讲解如何通过查询的方式检索数据。关系型数据库非常适合进行特定的查询操作。</p>
+<h3 id="获取单条记录"><a href="#获取单条记录" class="headerlink" title="获取单条记录"></a>获取单条记录</h3><p>让我们从数据库中检索 Grandma 的数据。使用 <a href="http://docs.peewee-orm.com/en/latest/peewee/api.html#SelectQuery.get" target="_blank" rel="noopener">SelectQuery.get()</a> 从数据库中获取单条记录。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; grandma = Person.select().where(Person.name == &apos;Grandma L.&apos;).get()</span><br></pre></td></tr></table></figure>
+
+<p>我们也可以使用简便的 <a href="http://docs.peewee-orm.com/en/latest/peewee/api.html#Model.get" target="_blank" rel="noopener">Model.get()</a> 来实现相同的功能：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; grandma = Person.get(Person.name == &apos;Grandma L.&apos;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="罗列记录"><a href="#罗列记录" class="headerlink" title="罗列记录"></a>罗列记录</h3><p>列出数据库中所有的 people 记录：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; for person in Person.select():</span><br><span class="line">...     print person.name, person.is_relative</span><br><span class="line">...</span><br><span class="line">Bob True</span><br><span class="line">Grandma L. True</span><br><span class="line">Herb False</span><br></pre></td></tr></table></figure>
+
+<p>让我们列出所有的猫以及他们主人的名字：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; query = Pet.select().where(Pet.animal_type == &apos;cat&apos;)</span><br><span class="line">&gt;&gt;&gt; for pet in query:</span><br><span class="line">...     print pet.name, pet.owner.name</span><br><span class="line">...</span><br><span class="line">Kitty Bob</span><br><span class="line">Mittens Jr Herb</span><br></pre></td></tr></table></figure>
+
+<p>在上一个查询里有一个问题：因为我们访问了 <tt class="docutils literal">pet.owner.name</tt> 但是我们并没有在我们原始的查询中包含这个值， 为了获取该 pet 的所有者，peewee 将执行一次额外的查询。这种行为将导致名为 <a href="http://docs.peewee-orm.com/en/latest/peewee/querying.html#nplusone" target="_blank" rel="noopener">N + 1</a> 的问题，并且通常情况下应该避免这种问题。</p>
+<p>我们可以通过同时查询 Pet 和 Person 以及增加一个 join 的方式来避免这个额外的查询。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; query = (Pet</span><br><span class="line">...          .select(Pet, Person)</span><br><span class="line">...          .join(Person)</span><br><span class="line">...          .where(Pet.animal_type == &apos;cat&apos;))</span><br><span class="line">&gt;&gt;&gt; for pet in query:</span><br><span class="line">...     print pet.name, pet.owner.name</span><br><span class="line">...</span><br><span class="line">Kitty Bob</span><br><span class="line">Mittens Jr Herb</span><br></pre></td></tr></table></figure>
+
+<p>让我们列出所有者是 Bob 的 pet:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; for pet in Pet.select().join(Person).where(Person.name == &apos;Bob&apos;):</span><br><span class="line">...     print pet.name</span><br><span class="line">...</span><br><span class="line">Kitty</span><br><span class="line">Fido</span><br></pre></td></tr></table></figure>
+
+<p>我们能做的另一个非常酷的事情是获取 bob 所拥有的 pet. 因为我们已经有了一个表示 Bob 的对象，所以我们可以用下面的代码来实现：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; for pet in Pet.select().where(Pet.owner == uncle_bob):</span><br><span class="line">...     print pet.name</span><br></pre></td></tr></table></figure>
+
+<p>可以通过增加一个 <a href="http://docs.peewee-orm.com/en/latest/peewee/api.html#SelectQuery.order_by" target="_blank" rel="noopener">order_by()</a> 语句的方式来确保它们是按字母顺序排序的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; for pet in Pet.select().where(Pet.owner == uncle_bob).order_by(Pet.name):</span><br><span class="line">...     print pet.name</span><br><span class="line">...</span><br><span class="line">Fido</span><br><span class="line">Kitty</span><br></pre></td></tr></table></figure>
+
+<p>让我们按从年幼到年长的顺序列出所有的 people:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; for person in Person.select().order_by(Person.birthday.desc()):</span><br><span class="line">...     print person.name, person.birthday</span><br><span class="line">...</span><br><span class="line">Bob 1960-01-15</span><br><span class="line">Herb 1950-05-05</span><br><span class="line">Grandma L. 1935-03-01</span><br></pre></td></tr></table></figure>
+
+<p>现在让我们列出所有的 people 以及他们各自的 pet 的一些信息：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; for person in Person.select():</span><br><span class="line">...     print person.name, person.pets.count(), &apos;pets&apos;</span><br><span class="line">...     for pet in person.pets:</span><br><span class="line">...         print &apos;    &apos;, pet.name, pet.animal_type</span><br><span class="line">...</span><br><span class="line">Bob 2 pets</span><br><span class="line">    Kitty cat</span><br><span class="line">    Fido dog</span><br><span class="line">Grandma L. 0 pets</span><br><span class="line">Herb 1 pets</span><br><span class="line">    Mittens Jr cat</span><br></pre></td></tr></table></figure>
+
+<p>我们又一次遇到了 <a href="http://docs.peewee-orm.com/en/latest/peewee/querying.html#nplusone" target="_blank" rel="noopener">N + 1</a> 查询的问题。我们可以通过执行 一个 JOIN 以及聚合记录的方式来避免这个问题：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; subquery = Pet.select(fn.COUNT(Pet.id)).where(Pet.owner == Person.id)</span><br><span class="line">&gt;&gt;&gt; query = (Person</span><br><span class="line">...          .select(Person, Pet, subquery.alias(&apos;pet_count&apos;))</span><br><span class="line">...          .join(Pet, JOIN.LEFT_OUTER)</span><br><span class="line">...          .order_by(Person.name))</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; for person in query.aggregate_rows():   #  注意是调用的 `aggregate_rows()` 方法。</span><br><span class="line">...     print person.name, person.pet_count, &apos;pets&apos;</span><br><span class="line">...     for pet in person.pets:</span><br><span class="line">...         print &apos;    &apos;, pet.name, pet.animal_type</span><br><span class="line">...</span><br><span class="line">Bob 2 pets</span><br><span class="line">     Kitty cat</span><br><span class="line">     Fido dog</span><br><span class="line">Grandma L. 0 pets</span><br><span class="line">Herb 1 pets</span><br><span class="line">     Mittens Jr cat</span><br></pre></td></tr></table></figure>
+
+<p>尽管我们单独创建了一个子查询，但是实际上 <strong>只执行了一条</strong> 查询语句。</p>
+<p>最后，让我们再做一个复杂的查询。让我们列出所有生日满足如下条件的 people:</p>
+<ul>
+<li>1940 之前(grandma)</li>
+<li>1959 之后(bob)</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; d1940 = date(1940, 1, 1)</span><br><span class="line">&gt;&gt;&gt; d1960 = date(1960, 1, 1)</span><br><span class="line">&gt;&gt;&gt; query = (Person</span><br><span class="line">...          .select()</span><br><span class="line">...          .where((Person.birthday &lt; d1940) | (Person.birthday &gt;= d1960)))</span><br><span class="line">...</span><br><span class="line">&gt;&gt;&gt; for person in query:</span><br><span class="line">...     print person.name, person.birthday</span><br><span class="line">...</span><br><span class="line">Bob 1960-01-15</span><br><span class="line">Grandma L. 1935-03-01</span><br></pre></td></tr></table></figure>
+
+<p>下面让我们找出生日在 1940 到 1960 之间的 people:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; query = (Person</span><br><span class="line">...          .select()</span><br><span class="line">...          .where((Person.birthday &gt; d1940) &amp; (Person.birthday &lt; d1960)))</span><br><span class="line">...</span><br><span class="line">&gt;&gt;&gt; for person in query:</span><br><span class="line">...     print person.name, person.birthday</span><br><span class="line">...</span><br><span class="line">Herb 1950-05-05</span><br></pre></td></tr></table></figure>
+
+<p>最后一个查询。这次将使用 SQL 函数的方式找出名称以大写或小写 G 开头的所有 people:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; expression = (fn.Lower(fn.Substr(Person.name, 1, 1)) == &apos;g&apos;)</span><br><span class="line">&gt;&gt;&gt; for person in Person.select().where(expression):</span><br><span class="line">...     print person.name</span><br><span class="line">...</span><br><span class="line">Grandma L.</span><br></pre></td></tr></table></figure>
+
+<p>我们以及处理完数据库了，让我们关闭连接吧：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; db.close()</span><br></pre></td></tr></table></figure>
+
+<p>所有其他的 SQL 子句也都是可用的，比如：</p>
+<ul>
+<li><a href="http://docs.peewee-orm.com/en/latest/peewee/api.html#SelectQuery.group_by" target="_blank" rel="noopener">group_by()</a></li>
+<li><a href="http://docs.peewee-orm.com/en/latest/peewee/api.html#SelectQuery.having" target="_blank" rel="noopener">having()</a></li>
+<li><a href="http://docs.peewee-orm.com/en/latest/peewee/api.html#SelectQuery.limit" target="_blank" rel="noopener">limit()</a> 和 <a href="http://docs.peewee-orm.com/en/latest/peewee/api.html#SelectQuery.offset" target="_blank" rel="noopener">offset()</a></li>
+</ul>
+<p>查看文档中的 <a href="http://docs.peewee-orm.com/en/latest/peewee/querying.html#querying" target="_blank" rel="noopener">Querying</a> 获取更多的信息。</p>
+<h2 id="作用于已存在的数据库"><a href="#作用于已存在的数据库" class="headerlink" title="作用于已存在的数据库"></a>作用于已存在的数据库</h2><p>如果你已经拥有了一个数据库，你可以使用 <a href="http://docs.peewee-orm.com/en/latest/peewee/playhouse.html#pwiz" target="_blank" rel="noopener">pwiz, a model generator.</a> 自动生成 peewee models。 比如，我有一个名字叫 charles_blog 的 postgresql 数据库，我就可以这样运行:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m pwiz -e postgresql charles_blog &gt; blog_models.py</span><br></pre></td></tr></table></figure>
+
+<h2 id="下一步？"><a href="#下一步？" class="headerlink" title="下一步？"></a>下一步？</h2><p>这里的内容只是用于快速上手。 如果你想找一个更完整的 web app 的示例的话，可以看一下 <a href="http://docs.peewee-orm.com/en/latest/peewee/example.html#example-app" target="_blank" rel="noopener">Example app</a> .</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="Leon Lau">
+            
+              <p class="site-author-name" itemprop="name">Leon Lau</p>
+              <p class="site-description motion-element" itemprop="description">竹杖芒鞋轻胜马,一蓑烟雨任平生</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Leon Lau</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
